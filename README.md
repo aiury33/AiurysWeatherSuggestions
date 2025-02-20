@@ -1,6 +1,6 @@
 # Aiury's Weather Suggestions
 
-Aiury's Weather Suggestions is a serverless .NET 8.0 C# Lambda program that provides personalized activity advice based on the user's current weather and location. By leveraging AWS Lambda and API Gateway, the application dynamically fetches geolocation and weather data to generate tailored activity suggestions.
+Aiury's Weather Suggestions is a serverless .NET 8.0 C# Lambda program that provides personalized activity advice based on the user's current weather and location. By leveraging AWS Lambda and API Gateway, the application dynamically fetches weather data to generate tailored activity suggestions.
 
 ## Features
 
