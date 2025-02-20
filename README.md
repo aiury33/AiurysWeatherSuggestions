@@ -1,0 +1,2 @@
+# AiurysWeatherSuggestions
+ AiurysWeatherSuggestions is a serverless .NET 8.0 C# Lambda application that provides personalized activity advice based on the user’s current weather and location. Deployed on AWS Lambda and integrated with API Gateway, the app leverages third-party geolocation and weather APIs to fetch real-time data and then returns tailored suggestions. Designed with SOLID and clean code principles, it’s highly maintainable and extensible.
