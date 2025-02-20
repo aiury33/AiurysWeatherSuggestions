@@ -23,7 +23,7 @@ Aiury's Weather Suggestions is a serverless .NET 8.0 C# Lambda program that prov
 - [AWS CLI](https://aws.amazon.com/cli/) (configured with appropriate credentials)
 - [AWS Lambda Tools for .NET CLI](https://github.com/aws/aws-lambda-dotnet)
 - An AWS account with permission to create and manage Lambda functions and API Gateway resources.
-- 
+
 ## Geolocation Considerations
 ### IPService for Testing:
 In this project, the IPService is implemented to determine the location based on the IP address. This approach is useful for testing and demonstration purposes, as it provides a fallback location when no geolocation data is provided.
