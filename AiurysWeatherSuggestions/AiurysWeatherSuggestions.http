@@ -1,0 +1,6 @@
+@AiurysWeatherSuggestions_HostAddress = http://localhost:5053
+
+GET {{AiurysWeatherSuggestions_HostAddress}}/weathersuggestions/
+Accept: application/json
+
+###

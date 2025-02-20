@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Weather Advice App deployed on AWS Lambda
+
+Resources:
+  AiurysWeatherSuggestions:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: AiurysWeatherSuggestions::AiurysWeatherSuggestions.LambdaEntryPoint::FunctionHandlerAsync
+      Runtime: dotnet8
+      CodeUri: ./bin/Release/net8.0/publish
+      MemorySize: 256
+      Timeout: 30
+      Events:
+        ProxyApi:
+          Type: Api
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
