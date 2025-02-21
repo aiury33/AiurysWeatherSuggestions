@@ -13,11 +13,10 @@ public class IPService(HttpClient httpClient) : IIPService
     public async Task<string?> GetPublicIPAsync()
     {
         var response = await _httpClient.GetAsync(PublicIpUrl);
-        if (!response.IsSuccessStatusCode)
-            return null;
+        if (!response.IsSuccessStatusCode) return null;
 
         var json = await response.Content.ReadAsStringAsync();
-        var ipResponse = JsonConvert.DeserializeObject<Root>(json);
+        var ipResponse = JsonConvert.DeserializeObject<DnsRoot>(json);
         return ipResponse?.Dns?.Ip;
     }
 
@@ -25,8 +24,7 @@ public class IPService(HttpClient httpClient) : IIPService
     {
         var url = string.Format(LocationUrlTemplate, ip);
         var response = await _httpClient.GetAsync(url);
-        if (!response.IsSuccessStatusCode)
-            return null;
+        if (!response.IsSuccessStatusCode) return null;
 
         var json = await response.Content.ReadAsStringAsync();
         var location = JsonConvert.DeserializeObject<IpInfo>(json);
