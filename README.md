@@ -1,6 +1,6 @@
-# AiurysWeatherSuggestions
+# Aiury's Weather Suggestions
 
-AiurysWeatherSuggestions is a serverless .NET 8.0 C# Lambda program that provides personalized activity advice based on the user's current weather and location. By leveraging AWS Lambda and API Gateway, the application dynamically fetches geolocation and weather data to generate tailored activity suggestions.
+Aiury's Weather Suggestions is a serverless .NET 8.0 C# Lambda program that provides personalized activity advice based on the user's current weather and location. By leveraging AWS Lambda and API Gateway, the application dynamically fetches weather data to generate tailored activity suggestions.
 
 ## Features
 
@@ -23,7 +23,7 @@ AiurysWeatherSuggestions is a serverless .NET 8.0 C# Lambda program that provide
 - [AWS CLI](https://aws.amazon.com/cli/) (configured with appropriate credentials)
 - [AWS Lambda Tools for .NET CLI](https://github.com/aws/aws-lambda-dotnet)
 - An AWS account with permission to create and manage Lambda functions and API Gateway resources.
-- 
+
 ## Geolocation Considerations
 ### IPService for Testing:
 In this project, the IPService is implemented to determine the location based on the IP address. This approach is useful for testing and demonstration purposes, as it provides a fallback location when no geolocation data is provided.
