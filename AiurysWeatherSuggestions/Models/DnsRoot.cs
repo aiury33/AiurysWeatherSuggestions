@@ -1,6 +1,6 @@
 ﻿namespace AiurysWeatherSuggestions.Models
 {
-    public class Root
+    public class DnsRoot
     {
         public DnsInfo Dns { get; set; }
     }
