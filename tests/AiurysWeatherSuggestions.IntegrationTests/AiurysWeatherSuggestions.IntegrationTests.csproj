@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AiurysWeatherSuggestions\AiurysWeatherSuggestions.csproj" />
+    <ProjectReference Include="..\..\src\AiurysWeatherSuggestions\AiurysWeatherSuggestions.csproj" />
   </ItemGroup>
 
   <ItemGroup>
